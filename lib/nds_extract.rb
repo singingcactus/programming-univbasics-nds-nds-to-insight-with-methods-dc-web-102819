@@ -11,7 +11,6 @@ def directors_totals(nds)
 
   while director_index < nds.length do
       director_name[director_index] = nds[director_index][:name]
-      director_hash = nds[director_index]
       director_index += 1
   end
 
@@ -25,6 +24,8 @@ def directors_totals(nds)
     director_name[6] => gross_for_director(nds[6]),
     director_name[7] => gross_for_director(nds[7]),
   }
+
+  result
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
