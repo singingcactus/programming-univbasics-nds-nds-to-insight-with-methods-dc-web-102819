@@ -8,27 +8,14 @@ require 'directors_database'
 def directors_totals(nds)
   director_index = 0
   director_name = []
+  result = { }
 
 
   while director_index < nds.length do
       director_name[director_index] = nds[director_index][:name]
+      result[director_name[director_index]] => gross_for_director(nds[director_index])
       director_index += 1
   end
-
-  result = {
-
-
-
-    director_name[0] => gross_for_director(nds[0]),
-    director_name[1] => gross_for_director(nds[1]),
-    director_name[2] => gross_for_director(nds[2]),
-    director_name[3] => gross_for_director(nds[3]),
-    director_name[4] => gross_for_director(nds[4]),
-    director_name[5] => gross_for_director(nds[5]),
-    director_name[6] => gross_for_director(nds[6]),
-    director_name[7] => gross_for_director(nds[7]),
-    director_name[8] => gross_for_director(nds[8]),
-  }
 
   result
 end
