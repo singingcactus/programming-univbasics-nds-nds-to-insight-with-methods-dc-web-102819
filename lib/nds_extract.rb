@@ -11,6 +11,7 @@ def directors_totals(nds)
 
   while director_index < nds.length do
       director_name[director_index] = nds[director_index][:name]
+      puts "#{director_index}: #{director_name[director_index]} confirmed"
       director_index += 1
   end
 
@@ -24,6 +25,8 @@ def directors_totals(nds)
     director_name[6] => gross_for_director(nds[6]),
     director_name[7] => gross_for_director(nds[7]),
   }
+
+  puts result
 
   result
 end
