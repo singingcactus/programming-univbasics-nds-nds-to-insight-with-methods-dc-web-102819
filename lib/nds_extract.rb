@@ -13,7 +13,9 @@ def directors_totals(nds)
       director_name = nds[director_index][:name]
       director_hash = nds[director_index]
       result[director_name] << gross_for_director(director_hash)
+      director_index += 1
   end
+
   result
 end
 
