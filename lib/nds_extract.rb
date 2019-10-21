@@ -12,7 +12,6 @@ def directors_totals(nds)
 
   while director_index < nds.length do
       director_name[director_index] = nds[director_index][:name]
-      puts "#{director_index}: #{director_name[director_index]} confirmed"
       director_index += 1
   end
 
