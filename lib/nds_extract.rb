@@ -16,6 +16,9 @@ def directors_totals(nds)
   end
 
   result = {
+
+
+
     director_name[0] => gross_for_director(nds[0]),
     director_name[1] => gross_for_director(nds[1]),
     director_name[2] => gross_for_director(nds[2]),
