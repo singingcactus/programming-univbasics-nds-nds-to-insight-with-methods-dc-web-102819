@@ -42,5 +42,3 @@ gross = 0
   end
   gross
 end
-
-directors_totals(directors_database)
